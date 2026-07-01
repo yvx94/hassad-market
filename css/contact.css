@@ -1,0 +1,73 @@
+/* حاوية نموذج الاتصال الرئيسي */
+.form-conuct {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* العنوان الرئيسي للفورم */
+.conuct {
+    color: #1A3C34;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* العناوين النصية فوق حقول الإدخال */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1A3C34;
+}
+
+/* التنسيق المشترك لحقول الإدخال ومنطقة الرسالة */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover{
+background-color: #5CB85C;
+}
+
+/* تأثير إضاءة الحقول وتغيير الخلفية عند الضغط عليها للكتابة */
+input:focus,
+textarea:focus {
+    border-color: #5CB85C;
+    background-color: #f9fff9;
+}
+
+/* زر إرسال الرسالة المخصص */
+form button {
+    width: 100%;
+    background-color: #1A3C34;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* تأثير تمرير الماوس فوق زر الإرسال */
+form button:hover {
+    background-color: #2a5a4e;
+    color: #5CB85C;
+}

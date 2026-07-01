@@ -1,0 +1,127 @@
+/* أبعاد صور الأقسام الرئيسية */
+.veg a img,
+.fruit a img,
+.legumes a img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/* توسيط الكلام فوق الافروع الرئسية  */
+.veg h3,
+.fruit h3,
+.legumes h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* حاوية الأقسام وتوزيعها بجانب بعضها */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* منع خروج محتوى الأقسام عن حدودها */
+.veg,
+.fruit,
+.legumes {
+    overflow: hidden;
+}
+
+/* حاوية لتوسيط الأزرار داخلياً */
+.but {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* توزيع عناصر قسم مميزات حصاد */
+#features ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 1;
+    background: #e0dede;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000d;
+    border-top: 4px solid #1A3C34;
+}
+
+#features ul li:hover{
+    color: #2E7D32;
+}
+
+/* تنسيق الأزرار العريضة في قسم الهيرو والمميزات */
+main #hero button,
+main #features button {
+    width: 900px;
+    height: 50px;
+    margin: auto 25%;
+}
+
+/* حاوية الكرت ثلاثي الأبعاد والعمق البصري */
+.container {
+    width: 280px;
+    height: 280px;
+    perspective: 1000px;
+    margin: 40px auto;
+}
+
+/* الصندوق الداخلي المسؤول عن حركة الدوران */
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+/* تدوير الصندوق عند تمرير الماوس */
+.container:hover .box {
+    transform: rotateY(-180deg);
+}
+
+/* الخصائص المشتركة للوجه الأمامي والخلفي للكرت */
+.box .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #1A3C34;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* إخفاء الزوائد في الوجه الأمامي */
+.box .front {
+    overflow: hidden;
+}
+
+/* ملء صورة الوجه الأمامي بالكامل */
+.box .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* تنسيق وتقليب الوجه الخلفي مسبقاً */
+.box .back {
+    background-color: #8080801a;
+    transform: rotateY(180deg);
+    text-decoration: none;
+}

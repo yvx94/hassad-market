@@ -1,0 +1,87 @@
+/* تنسيقات الهيكل الرئيسي للموقع */
+body {
+    background-color: #e4e8e2;
+    background-size: 100%;
+    font-family: "Vazirmatn", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+/* التباعد الافتراضي ولون النصوص للحاويات الرئيسية */
+header,
+main,
+footer {
+    padding: 10px;
+    color: #1A3C34;
+}
+
+/* تنسيق العنوان الكبير في الهيدر */
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* خط مخصص للعنوان العربي المدمج */
+header h1 span {
+    font-family: "Reem Kufi", sans-serif;
+    font-weight: bold;
+}
+
+/* التنسيق الافتراضي للروابط */
+a {
+    text-decoration: none;
+    text-align: right;
+    color: white;
+}
+
+/* شريط التنقل العلوي المثبت */
+nav {
+    width: 100%;
+    display: flex;
+    background-color: #1A3C34;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* توزيع روابط القائمة بشكل متساوي */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* تحسين مظهر روابط التنقل وحجم الخط */
+nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+    /* حركة ناعمة عند تمرير الماوس */
+}
+
+/* تأثير تمرير الماوس على روابط القائمة */
+ul a:hover {
+    color: #2E7D32;
+}
+
+/* التنسيق العام للأزرار الأساسية في الموقع */
+button {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.759);
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* كلاس لتنظيف العناص العائمة */
+.clear {
+    clear: both;
+}
