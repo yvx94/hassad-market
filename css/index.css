@@ -59,6 +59,18 @@
     color: #2E7D32;
 }
 
+#hero h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* تنسيق الأزرار العريضة في قسم الهيرو والمميزات */
 main #hero button,
 main #features button {
@@ -124,4 +136,38 @@ main #features button {
     background-color: #8080801a;
     transform: rotateY(180deg);
     text-decoration: none;
+}
+
+@media (max-width:768px){
+    .categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        }
+
+    main #hero button,
+    main #features button {
+        width: 90% !important;
+        margin: 15px auto !important;
+        display: block;
+        }
+
+    #features ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 15px;
+    }
+
+        .veg a img,
+        .fruit a img,
+        .legumes a img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
 }
